@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family:"Outfit",sans-serif;
+  background:#0d192b;
+}
+.main-box{
+  background:#14253d;
+  color:#fff;
+  width:280px;
+  height:470px;
+  border-radius: 10px;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+}
+.main-box .image{
+  border-radius: 5px;
+  width:100%;
+  height:230px;
+}
+.active a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.active a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.fortheimage{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.fortheimage a{
+  margin:15px auto;
+  width:250px;
+  height:230px;
+  border-radius:5px;
+}
+
+.fortheimage a:hover{
+background-image:url('icon-view.svg');
+background-repeat:no-repeat;
+background-position: center;
+background-size:48px;
+background-color: hsl(178, 100%, 50%);
+width: 250px;
+height:230px;
+border-radius: 5px;    
+display: inline-block; 
+}
+.fortheimage img:hover{
+  opacity:0.4;
+}
+.text-content{
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
+  margin:auto;
+  width:85%;
+}
+h1{
+  font-size:20px;
+  font-weight:400;
+  color:white;
+  margin-bottom:15px;
+}
+.text-content{
+  color:#8bacda;
+}
+.lower-text{
+  display:flex;
+  justify-content: space-between;
+  border-bottom:solid 0.1px #8bacda;
+  line-height: 4em;
+  font-size:13px;
+}
+.text{
+  font-size:15px;
+  opacity:0.7;
+  margin-bottom:10px;
+  width:100%;
+}
+.text2{
+  color:#00fff7;
+}
+.text2::before{
+  content:url('icon-ethereum.svg');
+  position:relative;
+  right:0.5rem;
+  top:0.2rem;
+  }
+.text3::before{
+  content:url('icon-clock.svg');
+  position:relative;
+  right:0.5rem;
+  top:0.2rem;
+  }
+.credit{
+  width:260px;
+  margin-top:15px;
+  display:flex;
+  align-items: center;
+  gap:10px;
+  font-size:14px;
+  color:#fff;  
+}
+.credit-image{
+  width:30px;
+  height:30px;
+  border:1px solid white;
+  border-radius:50%;
+}
+.neon:hover{
+  cursor:pointer;
+  color:#00fff7;
+}
+
